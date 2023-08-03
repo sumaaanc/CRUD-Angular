@@ -1,0 +1,93 @@
+{
+  "students": [
+    {
+      "name": "Bimochan sec ",
+      "address": "Biratnagar",
+      "email": "bimo@gmail.com",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Bimochan C",
+      "address": "Biratnagar",
+      "email": "bimo@gmail.com"
+    },
+    {
+      "name": "luca modric rrrr",
+      "address": "madrid",
+      "email": "goatdricc@gmail.com",
+      "id": 5
+    }
+  ],
+  "registered": [
+    {
+      "id": 1,
+      "fullName": "luca modric ten",
+      "phoneNum": [
+        99999999999999,
+        99999000
+      ],
+      "address": {
+        "pradesh": "koshu",
+        "district": "morang",
+        "municipality": "sundar"
+      },
+      "enrolledCourses": [
+        {
+          "courseName": "web dev",
+          "instructor": "rajesh hamal",
+          "duration": "one day"
+        },
+        {
+          "courseName": "data science",
+          "instructor": "afai",
+          "duration": "one year"
+        }
+      ]
+    },
+    {
+      "fullName": "ffffffffff",
+      "phoneNum": [
+        6666666666
+      ],
+      "address": {
+        "pradesh": "koshi",
+        "district": "sddsds",
+        "municipality": "sdsddss"
+      },
+      "enrolledCourses": [
+        {
+          "courseName": "dssdds",
+          "instructor": "sdsdsd",
+          "duration": "sdsdsd"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "fullName": "dddd",
+      "phoneNum": [
+        444444,
+        4444444
+      ],
+      "address": {
+        "pradesh": "dfsdsfd",
+        "district": "dfddfd",
+        "municipality": "dsfdsfsd"
+      },
+      "enrolledCourses": [
+        {
+          "courseName": "sdsadadasd",
+          "instructor": "dssdsd",
+          "duration": "sddsd"
+        },
+        {
+          "courseName": "dsdsdd",
+          "instructor": "dsdsds",
+          "duration": "dsds"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

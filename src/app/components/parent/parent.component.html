@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<div class="form-group">
+  <label>Input value from parent:</label>
+  <input type="text" class="form-control" #val  />
+  <button class="btn btn-primary" (click)="submitVal(val.value)">Submit</button>
+</div>
+<h4>This is the value from child to parent:{{fromChild }}</h4>
+
+<app-child [parentValue]="value" (getValChild)="getValChild($event)"></app-child>
+<router-outlet></router-outlet>

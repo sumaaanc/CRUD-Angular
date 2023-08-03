@@ -1,0 +1,44 @@
+<!-- details.component.html -->
+<form [formGroup]="simpleForm">
+    <div>
+      <label>Name:</label>
+      <input type="text" formControlName="name">
+      <div *ngIf="name && name.invalid && name.touched">
+        Name is required.
+      </div>
+    </div>
+  
+    <div formArrayName="favourites">
+      <div *ngFor="let favourite of favourites.controls; let i = index">
+        <h3>Favourite {{ i + 1 }}</h3>
+        <div [formGroupName]="i">
+          <div formArrayName="movies">
+            <div *ngFor="let movie of movies.controls; let j = index">
+              <label>Movie {{ j + 1 }}:</label>
+              <input type="text" [formControlName]="j">
+            </div>
+            <button type="button" (click)="addMovies()">Add Movie</button>
+          </div>
+  
+          <div formArrayName="sports">
+            <div *ngFor="let sport of sports.controls; let j = index">
+              <label>Sport {{ j + 1 }}:</label>
+              <input type="text" [formControlName]="j">
+            </div>
+            <button type="button" (click)="addSports()">Add Sport</button>
+          </div>
+  
+          <div formArrayName="persons">
+            <div *ngFor="let person of persons.controls; let j = index">
+              <label>Person {{ j + 1 }}:</label>
+              <input type="text" [formControlName]="j">
+            </div>
+            <button type="button" (click)="addPersons()">Add Person</button>
+          </div>
+        </div>
+      </div>
+      <button type="button" (click)="addFavourites()">Add Favourite</button>
+    </div>
+  </form>
+  
+  

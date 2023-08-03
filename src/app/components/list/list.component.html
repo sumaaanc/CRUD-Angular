@@ -1,0 +1,34 @@
+<h1>All students</h1>
+
+<!-- <div *ngFor="let student of students">
+   <ul>
+    <li>{{student.name}}</li>
+   </ul>
+
+</div> -->
+
+<table class="table table-striped table-bordered">
+   <thead class="thead-dark">
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">Name</th>
+       <th scope="col">Address</th>
+       <th scope="col">Email</th>
+       <th scope="col">Action</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let student of students">
+       <td>{{student.id}}</td>
+       <td>{{student.name}}</td>
+       <td>{{student.address}}</td>
+       <td>{{student.email}}</td>
+       <td>
+         <a (click)="deleteSts(student.id)">Delete</a>
+         &nbsp;
+         <a routerLink="/edit/{{student.id}}">Edit</a>
+      </td>
+     </tr>
+   </tbody>
+</table>
+
